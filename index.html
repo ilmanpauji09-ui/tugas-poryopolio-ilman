@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Muhamad Ilman Pauji</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MIP<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="kumpulan tugas/index_tugas.html" class="btn-tugas">Kumpulan Tugas</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Halo, Saya <span>Muhamad Ilman Pauji</span></h1>
+            <p>Mahasiswa Teknik Informatika | Tech Enthusiast</p>
+            <a href="#about" class="btn">Kenali Saya Lebih Dalam</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="img/profil.JPG" alt="Foto Muhamad Ilman Pauji">
+            </div>
+            <div class="about-text">
+                <h3>Identitas Diri</h3>
+                <p><strong>Nama:</strong> Muhamad Ilman Pauji</p>
+                <p><strong>NIM:</strong> 2510614070</p>
+                <p><strong>Prodi:</strong> Teknik Informatika</p>
+                <p>Saya adalah seorang mahasiswa yang berfokus pada pengembangan solusi teknologi masa depan, khususnya di bidang infrastruktur jaringan dan perangkat cerdas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">Keahlian Utama</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="img/networking.JPG" alt="Networking">
+                <h3>Networking</h3>
+                <p>Membangun dan mengelola infrastruktur jaringan komputer yang aman dan efisien.</p>
+            </div>
+            <div class="skill-card">
+                <img src="img/iot.JPG" alt="IoT">
+                <h3>Internet of Things (IoT)</h3>
+                <p>Integrasi perangkat keras dan lunak untuk menciptakan sistem otomasi pintar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Muhamad Ilman Pauji. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Tugas | Ilman Pauji</title>
+    <link rel="stylesheet" href="../style.css"> <style>
+        .tugas-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-tugas-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 30px;
+        }
+        .tugas-card {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid #00d2ff;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        .tugas-card:hover {
+            transform: translateY(-10px);
+            background: #00d2ff;
+            color: #000;
+        }
+        .back-btn {
+            margin-top: 40px;
+            color: #00d2ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="tugas-wrapper">
+        <h2 class="section-title">Kumpulan Tugas Informatika</h2>
+        <p>Silakan pilih tugas yang ingin dilihat:</p>
+
+        <div class="menu-tugas-container">
+            <a href="/kumpulan tugas/tugas_formulir/tugas_formukir.html" class="tugas-card">
+                
+                <h3>1. Tugas Formulir</h3>
+                <p>Klik untuk melihat detail</p>
+            </a>
+
+            <a href="tugas_navbar.html" class="tugas-card">
+                <h3>2. Tugas Navbar</h3>
+                <p>Klik untuk melihat detail</p>
+            </a>
+        </div>
+
+        <a href="../index.html" class="back-btn">← Kembali ke Beranda</a>
+    </div>
+</body>
+</html>

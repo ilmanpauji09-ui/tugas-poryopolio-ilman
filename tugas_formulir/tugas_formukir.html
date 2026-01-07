@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="/kumpulan tugas/tugas_formulir/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Formulir Mahasiswa</h2>
+                <p>Silakan isi data diri Anda dengan lengkap</p>
+            </div>
+
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">Nama Lengkap</label>
+                    <input type="text" id="fullName" placeholder="Masukkan nama lengkap" required>
+                    <small class="error-msg"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="nim">NIM</label>
+                    <input type="number" id="nim" placeholder="Contoh: 2510614070" required>
+                    <small class="error-msg"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Kampus</label>
+                    <input type="email" id="email" placeholder="nama@mahasiswa.ac.id" required>
+                    <small class="error-msg"></small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prodi">Program Studi</label>
+                        <select id="prodi" required>
+                            <option value="">Pilih Prodi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Teknik Elektro">Teknik Elektro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="Laki-laki" required> L</label>
+                            <label><input type="radio" name="gender" value="Perempuan"> P</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Alamat Domisili</label>
+                    <textarea id="address" rows="3" placeholder="Alamat lengkap..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Daftar Sekarang</button>
+            </form>
+            
+            <a href="/kumpulan tugas/index_tugas.html" class="back-link">← Kembali ke Menu Tugas</a>
+        </div>
+    </div>
+
+    <script src="script_formulir.js"></script>
+</body>
+</html>
